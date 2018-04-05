@@ -1,0 +1,115 @@
+//colors
+$black: black;
+
+//fonts
+$font_0: Roboto;
+$font_1: sans-serif;
+$font_2: monospace;
+$font_3: cursive;
+$font_4: Raleway;
+
+//urls
+$url_0: url(images.jpg);
+$url_1: url(coffe1.png);
+
+body {
+	margin: 0;
+	padding: 0;
+	background: $url_0;
+	font-family: $font_2;
+}
+#pocetna {
+	width: 100%;
+	height: 400px;
+	margin-left: 0;
+	background: $url_1 no-repeat;
+	img {
+		margin: 0;
+		width: 100%;
+	}
+	h1 {
+		padding: 120px 0 80px;
+		text-align: center;
+		width: 50%;
+		color: $black;
+		padding-left: 20px;
+		font-family: $font_4, $font_1;
+		font-size: 30px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+}
+header {
+	background-image: $url_0;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	height: 100px;
+	.header h1 {
+		font-family: $font_3;
+		transform: rotate(-15deg);
+		margin: auto;
+		float: left;
+		padding-top: 20px;
+		padding-left: 50px;
+		font-size: 50px;
+	}
+}
+.main-nav {
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+	li {
+		display: inline-block;
+		a {
+			color: $black;
+			text-decoration: none;
+			padding: 5px 20px;
+			font-family: $font_0, $font_1;
+			font-size: 15px;
+			&:hover {
+				border: 1px solid $black;
+			}
+		}
+		&.active a {
+			border: 1px solid $black;
+		}
+	}
+}
+.header {
+	max-width: 1200px;
+	margin: auto;
+}
+#intro {
+	padding: 10px;
+	margin: 10px;
+	height: 280px;
+	img {
+		
+		border-radius: 10px;
+		float: right;
+		margin-top: 100px;
+	}
+	h1 {
+		text-align: center;
+		margin-top: 50px;
+	}
+	button {
+		margin-left: 570px;
+		cursor: pointer;
+		background-color: transparent;
+		border-radius: 10px;
+		font-size: 15px;
+	}
+}
+#poslednja {
+	background: $url_0;
+	text-align: center;
+	height: 200px;
+	h1 {
+		padding-top: 15px;
+	}
+	img {
+		width: 35px;
+	}
+}
